@@ -62,7 +62,11 @@ int main()
 {
 	vector<PSTUDAT> students;
 
-	printStudents(loadData(students));
+	students = loadData(students);
+
+#ifdef _DEBUG
+	printStudents(students);
+#endif
 
 	return 1;
 }
