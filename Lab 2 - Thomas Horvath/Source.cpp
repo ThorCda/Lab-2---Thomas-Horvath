@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-#define PreRelease
+//#define PreRelease
 
 using namespace std;
 
@@ -98,7 +98,7 @@ int main()
 #ifdef PreRelease
 	cout << "Running PreRelease \n";
 #else
-	cout << "Running Standard \n"
+	cout << "Running Standard \n";
 #endif 
 
 	vector<PSTUDAT> students;
