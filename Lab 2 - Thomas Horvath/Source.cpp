@@ -95,6 +95,12 @@ void printStudents(vector<PSTUDAT> v)
 
 int main()
 {
+#ifdef PreRelease
+	cout << "Running PreRelease \n";
+#else
+	cout << "Running Standard \n"
+#endif 
+
 	vector<PSTUDAT> students;
 
 	students = loadData(students);
